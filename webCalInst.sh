@@ -86,3 +86,14 @@ useradd -m -g sudo -p $(openssl passwd -1 SuperSecretPassword!12) joemama
 echo "U3VwZXJTZWNyZXRQYXNzd29yZCExMg==" > /home/joemama/.passReminder
 chmod 444 /home/joemama/.passReminder
 
+# Add some silly files!
+echo "Take over the world then make a PB&J and watch Little Mermaid." > /home/joemama/secretPlans
+tee /home/joemama/recipe-for-PJB <<EOF
+Step one: Get out bread. Use whole wheat bread! Lets be healthy!
+Step two: Get peanut butter. Crunchy is prefered.
+Step three: Get jelly. Make sure to use grape cause its yummy.
+Step four: Install peanut butter on TOP slice. Make sure its the top slice.
+Step five: Install jelly on BOTTOM slice. This really matters!
+Step six: Combine both slices very carefully. Do not drip jelly on new Darth Vader shirt!
+Step seven: Turn on Little Mermaid and enjoy the PB&J. Dont forget sing along to movie!
+EOF
