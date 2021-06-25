@@ -86,9 +86,14 @@ useradd -m -g sudo -p $(openssl passwd -1 SuperSecretPassword!12) joemama
 echo "U3VwZXJTZWNyZXRQYXNzd29yZCExMg==" > /home/joemama/.passReminder
 chmod 444 /home/joemama/.passReminder
 
+# Create root directory in Home and add a flag 
+mkdir /home/root
+chmod 700 /home/root
+echo "Good Job!! You Owned the server. Thanks for playing!" > /home/root/flag.txt
+
 # Add some silly files!
 echo "Take over the world then make a PB&J and watch Little Mermaid." > /home/joemama/secretPlans
-tee /home/joemama/recipe-for-PJB <<EOF
+tee /home/joemama/recipe-for-PBJ <<EOF
 Step one: Get out bread. Use whole wheat bread! Lets be healthy!
 Step two: Get peanut butter. Crunchy is prefered.
 Step three: Get jelly. Make sure to use grape cause its yummy.
