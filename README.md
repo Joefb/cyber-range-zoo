@@ -8,7 +8,7 @@ The Cyber Range Zoo will be a virtual platform for students to practice penetrat
 I am working in a team and we are developing automation scripts and code to 
 automate the installation of vulnerable software across different operating systems. 
 
-This is a wonderful learning opportunity me and I really appreciate RIT letting me be involved.
+This is a wonderful learning opportunity for me and I really appreciate RIT letting me be involved.
 I will be focusing on:
 * BASH scripting
 * PowerShell
