@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # This script installs WebCalendar 1.2.4 on fresh install of Ubuntu Server 20.04.2 LTS. 
 # WebCalendar 1.2.4 has the vulnerability CVE:2012-1495 that allows arbitrary code 
 # injection as www-data. This exploit is included in Metasploit.
