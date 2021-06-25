@@ -44,7 +44,7 @@ mysql -u root -e "FLUSH PRIVILEGES"
 mysql intranet < /var/www/html/admin/WebCalendar-1.2.4/install/sql/tables-mysql.sql
 
 # Configure settings.php file
-cp -r /var/www/html/admin/WebCalendar-1.2.4/includes/settings.php.orig settings.php
+cp -r /var/www/html/admin/WebCalendar-1.2.4/includes/settings.php.orig /var/www/html/admin/WebCalendar-1.2.4/includes/settings.php
 
 declare -a fieldArr                                                             
 declare -a parArr                                                               
@@ -60,7 +60,7 @@ done
 chmod -R 777 /var/www/html/admin/WebCalendar-1.2.4/includes
 
 # Build index.html page with some hints
-tee -a /var/www/html/index.html <<EOF
+tee /var/www/html/index.html <<EOF
 <!DOCTYPE html>
 <html>
 <body>
