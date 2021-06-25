@@ -8,7 +8,10 @@
 # This challenge has a half setup WebCalendar that is stored in the
 # /var/www/html/admin directory. The site admin stored it in admin until they have
 # time to complete the configuration. The admin directory can be found with tools such
-# as gobuster, dirbuster etc. 
+# as gobuster, dirbuster etc. After getting a reverse shell and some exploration
+# the attack will find a user named joemama. joemama stores a password reminder
+# in a hidden file in their home dir that is stored as a base64 hash. joemama has sudo privs
+# that can be used to get the flag in the /home/root dir and own the server!
 
 # Writtten by: Joseph Burgess
 
