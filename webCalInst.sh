@@ -24,7 +24,7 @@ apt-get -y update
 apt-get install -y php5.6 php5.6-mysql php5.6-gd php5.6-mcrypt php5.6-mbstring php5.6-sqlite3 apache2 libapache2-mod-php5.6
 
 # Install MariaDB/MySQL
-sudo apt-get install -y mysql-server mysql-client
+apt-get install -y mysql-server mysql-client
 
 # Install unzip
 apt install -y unzip
